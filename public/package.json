@@ -1,0 +1,24 @@
+{
+  "name": "tecnica8lanus-web",
+  "version": "1.0.0",
+  "description": "Página Web - Técnica 8 Lanus Almafuerte",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/scss/app.scss src/css/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/eltomivfg.git"
+  },
+  "author": "eltomivfg+jaingunch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github.com/eltomivfg/issues"
+  },
+  "homepage": "https://github.com/github.com/eltomivfg#readme",
+  "dependencies": {
+    "sass": "^1.87.0"
+  }
+
+}
