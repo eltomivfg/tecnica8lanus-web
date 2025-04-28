@@ -554,5 +554,60 @@ h4 {
 }
 
 /** UI **/
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  text-align: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 3px 43px 110px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 43px 110px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 43px 110px -16px rgba(0, 0, 0, 0.75);
+  background-image: url(../../src/imgs/header.jpg);
+}
+.header nav {
+  width: 100%;
+  box-shadow: 3px 43px 110px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 43px 110px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 43px 110px -16px rgba(0, 0, 0, 0.75);
+  align-items: center;
+  background-color: rgba(71, 71, 71, 0.781);
+  height: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.header nav img {
+  width: 100px;
+  height: 100px;
+}
+.header nav a {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+  list-style: none;
+  transition: 0.4s;
+  color: white;
+  text-align: end;
+}
+.header nav a:hover {
+  color: rgb(199, 199, 199);
+}
+.header h1 {
+  font-size: 100px;
+  color: white;
+  margin-bottom: 0;
+  font-weight: bold;
+  display: inline;
+}
+.header p {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  max-width: 80%;
+}
 
 /*# sourceMappingURL=app.css.map */
