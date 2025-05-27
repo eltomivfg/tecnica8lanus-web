@@ -1,0 +1,34 @@
+.footer{
+    margin-top: 150px;
+    height: 200px;
+    justify-content: center;
+    background-color: rgb(197, 0, 0);
+    display: flex;
+    flex-direction: column;
+    div{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        p{
+            color: white;
+            font-size: 30px;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    .downFooter{
+        height: 50px;
+        background-color: #780404;
+        p{
+            font-size: 15px;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+            color: rgb(255, 255, 255);
+        }
+    }
+
+}

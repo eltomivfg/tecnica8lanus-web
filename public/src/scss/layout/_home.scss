@@ -1,0 +1,90 @@
+.TEST{
+    margin: 20px auto;
+    background-color: black;
+    width: 85%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    background-image: url(../../src/imgs/header.jpg);
+    
+
+    &:hover{
+        cursor: pointer;
+        p{
+                background-color: rgb(148, 2, 2);
+        }
+    }
+
+
+    p{
+        transition: .4s;
+        color: white;
+        background-color: rgb(165, 4, 4);
+        width: 250px;
+        height: 40px;
+        font-weight: bold;
+        padding: 10px;
+        margin: 0;
+        border-radius: 0 10px 10px 0;
+
+
+    }
+}
+
+
+.section{
+    margin: auto;
+    width: 85%;
+    .titleSection{
+        color: white;
+        margin: 20px auto;
+        font-weight: bold;
+        background-color: rgb(153, 4, 4);
+        width: 85%;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    .containerCardsEspecialidades{
+
+        margin-top: 50px;
+        margin: auto;
+        width: 85%;
+        @include grid(4, 2rem);
+        .cardEspecialidad{
+            position: relative;
+            box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.048);
+            border: 1px solid rgba(0, 0, 0, 0.123);
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            top: 0;
+            border-radius: 15px;
+            transition: ease-in-out .4s;
+            max-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &:hover{
+                cursor: pointer;
+                top: -10px;
+            }
+
+            h2{
+                font-weight: bold;
+            }
+
+            p{  
+                font-size: 20px;
+            }
+        }  
+    }
+
+
+
+}
