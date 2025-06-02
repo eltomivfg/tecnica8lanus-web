@@ -23,6 +23,19 @@
     }
 }
 
+@mixin desbordado3 {
+    @media (max-width: #{$desbordado3}) {
+        @content;
+    }
+}
+
+@mixin desbordado4 {
+    @media (max-width: #{$desbordado4}) {
+        @content;
+    }
+}
+
+
 @mixin intermedio {
     @media (max-width: #{$intermedio}) {
         @content;

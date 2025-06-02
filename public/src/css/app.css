@@ -568,7 +568,7 @@ h4 {
   -moz-box-shadow: 3px 43px 110px -16px rgba(0, 0, 0, 0.35);
   background-image: url(../../src/imgs/header.jpg);
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .header {
     height: 400px;
   }
@@ -626,7 +626,7 @@ h4 {
     font-size: 7rem;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .header h1 {
     font-size: 5rem;
   }
@@ -648,13 +648,13 @@ h4 {
     font-size: 20px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .header p {
     font-size: 15px;
   }
 }
 
-.TEST {
+.blog-popup {
   margin: 20px auto;
   background-color: black;
   width: 85%;
@@ -668,13 +668,18 @@ h4 {
   border-radius: 15px;
   background-image: url(../../src/imgs/header.jpg);
 }
-.TEST:hover {
+@media (max-width: 645px) {
+  .blog-popup {
+    width: 100%;
+  }
+}
+.blog-popup:hover {
   cursor: pointer;
 }
-.TEST:hover p {
+.blog-popup:hover p {
   background-color: rgb(148, 2, 2);
 }
-.TEST p {
+.blog-popup p {
   transition: 0.4s;
   color: white;
   background-color: rgb(165, 4, 4);
@@ -688,7 +693,15 @@ h4 {
 
 .section {
   margin: auto;
-  width: 85%;
+  width: 90%;
+}
+.section h1, .section p, .section h2, .section a {
+  text-shadow: 2px 4px 13px rgba(0, 0, 0, 0.4431372549);
+}
+@media (max-width: 1770px) {
+  .section {
+    width: 95%;
+  }
 }
 .section .titleSection {
   color: white;
@@ -706,6 +719,20 @@ h4 {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1024px) {
+  .section .containerCardsEspecialidades {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .section .containerCardsEspecialidades {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .section .containerCardsEspecialidades .cardEspecialidad {
   position: relative;
@@ -729,8 +756,55 @@ h4 {
 .section .containerCardsEspecialidades .cardEspecialidad h2 {
   font-weight: bold;
 }
+@media (max-width: 1770px) {
+  .section .containerCardsEspecialidades .cardEspecialidad h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1195px) {
+  .section .containerCardsEspecialidades .cardEspecialidad h2 {
+    font-size: 2rem;
+  }
+}
 .section .containerCardsEspecialidades .cardEspecialidad p {
   font-size: 20px;
+}
+@media (max-width: 1770px) {
+  .section .containerCardsEspecialidades .cardEspecialidad p {
+    font-size: 15px;
+  }
+}
+
+.contactForm {
+  margin-top: 80px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../../src/imgs/banner-contacto.jpg);
+}
+.contactForm h2 {
+  text-shadow: 2px 4px 13px #000000;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0;
+}
+.contactForm a {
+  text-shadow: 2px 4px 13px #000000;
+  margin: 20px auto;
+  padding: 20px;
+  width: 200px;
+  line-height: 0;
+}
+.contactForm p {
+  text-shadow: 2px 4px 13px #000000;
+  color: white;
+  margin: 0;
 }
 
 .footer {
