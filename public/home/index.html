@@ -11,19 +11,30 @@
 
 
     <header class="header headerhome">
-        <nav>
-            <img src="../src/imgs/logo.png">
+        <nav class="nav" id="nav">
+            <div class="containerMenu-img">
+                <div>
+                    <img src="../src/imgs/logo.png">
+                    <h1>E.E.S.T N°8 Almafuerte</h1>
+                </div>
 
-            <div>
-                <a href="#">Inicio</a>
-                <a href="#">Especialidades</a>
-                <a href="#">Testimonios</a>
-                <a href="#">Contacto</a>
+                <i class="fa-solid fa-bars" id="btn-menu"></i>
+            </div>
+
+            <div class="containerMenu-urls oculto" id="menu-urls">
+
+                
+                <a href="#" class="">Inicio</a>
+                <a href="#" class="">Especialidades</a>
+                <a href="#" class="">Testimonios</a>
+                <a href="#" class="">Contacto</a>
             </div>
         </nav>
-
+    <div class="containerMenu-titles">
         <h1>TECNICA N°8 ALMAFUERTE</h1>
         <p>“Hacia el desarrollo en salud de nuestra juventud, el avance intelectual por el ejercicio del pensamiento y la formacion integral de la persona por la maduración de sus sentimientos”</p>
+    </div>
+  
     </header>
 
     <section class="section">
@@ -87,6 +98,56 @@
             <p>Página Web diseñada por <a href="#">Tomas Perez</a> y <a href="#">Jaim Gunch</a></p>
         </div>
     </footer>
+
+
+    <script>
+
+
+
+const toggleButton = document.getElementById("btn-menu");
+const navWrapper = document.getElementById("nav");
+const menuUrls = document.getElementById("menu-urls");
+const mediaQuery = window.matchMedia("(max-width: 950px)");
+
+
+console.log(toggleButton);
+console.log(navWrapper);
+
+toggleButton.addEventListener("click", () => {
+  navWrapper.classList.toggle("nav-colapsed");
+      menuUrls.classList.add("oculto");
+
+});
+
+
+
+navWrapper.addEventListener("click", event => {
+  if (event.target.id === "nav") {
+    navWrapper.classList.remove("nav-colapsed");
+  menuUrls.classList.remove("oculto");
+  }
+});
+
+
+
+
+function aplicarClase(e) {
+  if (e.matches) {
+    menuUrls.classList.add("oculto");
+  } else {
+    menuUrls.classList.remove("oculto");
+  }
+}
+
+// Ejecutar al cargar
+aplicarClase(mediaQuery);
+
+// Escuchar cambios en el tamaño de la pantalla
+mediaQuery.addEventListener("change", aplicarClase);
+
+
+    </script>
+
 
 </body>
 </html>

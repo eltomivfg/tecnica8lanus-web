@@ -5,6 +5,12 @@
     }
 }
 
+@mixin telefono-mini {
+    @media (max-width: #{$telefono-mini}) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (max-width: #{$tablet}) {
         @content;
