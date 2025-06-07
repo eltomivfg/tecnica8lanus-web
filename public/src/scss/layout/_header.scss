@@ -1,7 +1,15 @@
 .header{
+    transition: .4s;
     display: flex;
     flex-direction: column;
+    height: 100px;
+
+
+    &.headerhome{
     height: 500px;
+    }
+
+
     text-align: center;
     align-items: center;
     background-size: cover;
@@ -35,7 +43,7 @@
 
             }
 
-                    @include intermedio{
+     @include intermedio{
         margin: 0;
         width: 100vw;
         display: flex;
@@ -57,34 +65,25 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.438);
         }
         
-
-
-
         }
-
-        
-
 
     }
 
 
     @include intermedio{
-        height: 750px;
+        height: 500px;
 
 
     }
 
-
-
-
-
     nav{
+        position: absolute;
+        z-index: 1;
         width: 100%;
         box-shadow: 3px 43px 110px -16px rgba(0,0,0,0.75);
         -webkit-box-shadow: 3px 43px 110px -16px rgba(0,0,0,0.75);
         -moz-box-shadow: 3px 43px 110px -16px rgba(0,0,0,0.75);
         align-items: center;
-        background: #780404;
         background: #780404;
         background: linear-gradient(90deg,rgba(120, 4, 4, 1) 36%, rgba(255, 0, 0, 1) 100%, rgba(218, 1, 0, 1) 100%, rgba(0, 5, 3, 1) 100%, rgba(237, 221, 83, 1) 100%);
         height: 100px;
@@ -111,6 +110,7 @@
                 text-align: center;
                 align-items: center;
                 .containerMenu-urls{
+                transition: .8s;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
@@ -157,7 +157,22 @@
 
     // TITULOS HEADER
     .containerMenu-titles{
-           margin-top: 80px;
+    margin-top: 150px;
+
+
+        @include desbordado{
+        margin-top: 0;
+         position: absolute;
+         top: 200px;
+        }
+
+        @include intermedio{
+        margin-top: 0;
+         position: absolute;
+         top: 250px;
+        }
+
+
     h1{
         
         @include desbordado{

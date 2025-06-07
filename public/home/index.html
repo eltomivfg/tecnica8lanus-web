@@ -18,7 +18,7 @@
                     <h1>E.E.S.T N°8 Almafuerte</h1>
                 </div>
 
-                <i class="fa-solid fa-bars" id="btn-menu"></i>
+                <i class="fa-solid fa-bars oculto" id="btn-menu"></i>
             </div>
 
             <div class="containerMenu-urls oculto" id="menu-urls">
@@ -134,8 +134,10 @@ navWrapper.addEventListener("click", event => {
 function aplicarClase(e) {
   if (e.matches) {
     menuUrls.classList.add("oculto");
+    toggleButton.classList.remove("oculto");
   } else {
     menuUrls.classList.remove("oculto");
+    toggleButton.classList.add("oculto");
   }
 }
 

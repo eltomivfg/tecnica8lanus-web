@@ -555,9 +555,10 @@ h4 {
 
 /** UI **/
 .header {
+  transition: 0.4s;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 100px;
   text-align: center;
   align-items: center;
   background-size: cover;
@@ -567,6 +568,9 @@ h4 {
   -webkit-box-shadow: 3px 43px 110px -16px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 3px 43px 110px -16px rgba(0, 0, 0, 0.35);
   background-image: url(../../src/imgs/header.jpg);
+}
+.header.headerhome {
+  height: 500px;
 }
 .header .oculto {
   display: none;
@@ -608,16 +612,17 @@ h4 {
 }
 @media (max-width: 950px) {
   .header {
-    height: 750px;
+    height: 500px;
   }
 }
 .header nav {
+  position: absolute;
+  z-index: 1;
   width: 100%;
   box-shadow: 3px 43px 110px -16px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 3px 43px 110px -16px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 43px 110px -16px rgba(0, 0, 0, 0.75);
   align-items: center;
-  background: #780404;
   background: #780404;
   background: linear-gradient(90deg, rgb(120, 4, 4) 36%, rgb(255, 0, 0) 100%, rgb(218, 1, 0) 100%, rgb(0, 5, 3) 100%, rgb(237, 221, 83) 100%);
   height: 100px;
@@ -643,6 +648,7 @@ h4 {
     align-items: center;
   }
   .header nav.nav-colapsed .containerMenu-urls {
+    transition: 0.8s;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -675,7 +681,21 @@ h4 {
   color: rgb(199, 199, 199);
 }
 .header .containerMenu-titles {
-  margin-top: 80px;
+  margin-top: 150px;
+}
+@media (max-width: 1300px) {
+  .header .containerMenu-titles {
+    margin-top: 0;
+    position: absolute;
+    top: 200px;
+  }
+}
+@media (max-width: 950px) {
+  .header .containerMenu-titles {
+    margin-top: 0;
+    position: absolute;
+    top: 250px;
+  }
 }
 .header .containerMenu-titles h1 {
   font-size: 100px;
@@ -802,7 +822,7 @@ h4 {
   box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.048);
   border: 1px solid rgba(0, 0, 0, 0.123);
   text-align: center;
-  background-color: rgb(218, 216, 216);
+  background-color: rgb(241, 241, 241);
   padding: 10px;
   top: 0;
   border-radius: 15px;
